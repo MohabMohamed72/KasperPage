@@ -19,6 +19,14 @@ function Removeing_box_background(){
     
 }
 
+// let XPosition = []
+// box.addEventListener('mousemove' ,(e)=>{
+//     if(e.x){
+//         XPosition.push(e.x)
+//     }
+//     console.log(XPosition[(XPosition.length - 1)] - XPosition[0])
+// })
+
 function Adding_box_background(number){
     switch(number){
         case 0:
