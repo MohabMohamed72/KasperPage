@@ -4,6 +4,9 @@ const right_arrow = document.querySelector("#right-arrow")
 const left_arrow = document.querySelector("#left-arrow")
 const Landing_bg = document.querySelector("#landing")
 const bars = document.querySelector("#bar")
+const back = document.querySelector("#back")
+const list = document.querySelector("#list")
+const sidebar = document.querySelector("#sidebar")
 const sliding_icons =document.querySelector('#sliding-icons') 
 const icon = sliding_icons.querySelectorAll('#icon')
 
@@ -19,13 +22,7 @@ function Removeing_box_background(){
     
 }
 
-// let XPosition = []
-// box.addEventListener('mousemove' ,(e)=>{
-//     if(e.x){
-//         XPosition.push(e.x)
-//     }
-//     console.log(XPosition[(XPosition.length - 1)] - XPosition[0])
-// })
+
 
 function Adding_box_background(number){
     switch(number){
@@ -44,13 +41,17 @@ function Adding_box_background(number){
 }
 
 
-// function Removing_icon_background(){
-//     icon.forEach((el)=>{
-//         if(el.classList.contains('bg-[#0f748f]')){
-//             el.classList.remove('bg-[#0f748f]')
-//         }
-//     })
-// }
+bars.addEventListener('click',()=>{
+    sidebar.classList.remove('hidden')
+})
+
+back.addEventListener('click',()=>{
+    sidebar.classList.add('hidden')
+})
+
+list.addEventListener('click',()=>{
+    sidebar.classList.add('hidden')
+})
 
 function Removing_icon_background(){
     icon.forEach((el)=>{

@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="./css/output.css"> -->
 </head>
 
-<body class="transition-all duration-300">
+<body class="transition-all duration-300 ">
     <div class="landing h-[100vh] px-10 py-3">
         <div id="nav-bar" class="pb-2 relative ml-auto mr-auto w-[60%]  flex justify-between items-center border-b-2 max-sm:w-full  border-white text-white z-[1000]">
             <img src="../images/logo.png" alt="">
@@ -27,8 +27,19 @@
                 </ul>
                 <i class="fa-solid fa-magnifying-glass self-center text-[20px]  border-l-2 px-3 py-3 "></i>
             </div>
-            <i id="bar" class="fa-solid fa-bars lg:hidden max-lg:inline-block"></i>
-
+            <i id="bar" class="fa-solid fa-bars lg:hidden max-lg:inline-block cursor-pointer"></i>
+            <div id="sidebar" class="absolute top-[-12px] right-[-40px] w-3/4 hidden h-[100vh] bg-[#0f748f]">
+                
+                <p id="back" class="p-1 w-fit m-2 cursor-pointer">Back</p>
+                <ul id="list" class="flex flex-col ">
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">Home      </li>
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">Services  </li>
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">Portfolio </li>
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">About     </li>
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">Pricing    </li>
+                    <li class="p-2 hover:text-[#19c8fa] hover:cursor-pointer hover:border-b-2 hover:border-[#19c8fa] transition-all">Contact    </li>
+                </ul>
+            </div>
         </div>
         <div id="landing" class="bg-[url('../images/landing.jpg')] bg-cover  absolute top-0 left-0 w-full h-full transition-all">
             <div class="bg-[#00000094] absolute top-0 left-0 z-10 w-full h-full"></div>
